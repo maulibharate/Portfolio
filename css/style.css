@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+/*=================================================
+                    Navigation Styles
+==================================================*/
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-nav a {
+    display: block;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    
+}
+
+.logo-name a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo-name a {
+    color: #000;
+    font-family: 'Monoton', cursive;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: #000;
+    
+    text-align: center;
+}
+
+.nav-link:hover{
+    color: #000;
+}
+
+.nav-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 29%;
+    width: 40px;
+    height: 2px;
+    background-color: #129CF3; 
+    transition: transform 0.5s ease;
+    transform: scale(1.5);
+    text-align: center;
+}
+
+.back:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 20%;
+    width: 80px !important;
+    height: 2px;
+    background-color: #129CF3; 
+    transition: transform 0.5s ease;
+    transform: scale(1.5);
+}
+
+.navbar-nav .resume {
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar-nav .resume:hover {
+    border-color: #129CF3;
+    background-color: #129CF3;
+    color: #fff;
+}
+
+.navbar-toggler {
+    border: 1px solid #DDA159 !important;
+    background-color: #DDA159 !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #DDA159 !important;
+}
+
+/*=================================================
+Screen size 767px after Styles (navbar responsive)
+==================================================*/
+
+@media only screen and (max-width: 767px) {
+    
+    .collapse li {
+        border-bottom: 1px solid #333;
+    }
+    
+   .nav-link:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 45%;
+        width: 40px;
+        height: 2px;
+        background-color: #129CF3; 
+        transition: transform 0.5s ease;
+        transform: scale(1.5);
+        text-align: center;
+    }
+    
+    .back:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 40%;
+        width: 80px !important;
+        height: 2px;
+        background-color: #129CF3; 
+        transition: transform 0.5s ease;
+        transform: scale(1.5);
+    }
+    
+ 
+}
+
+@media only screen and (max-width: 991px) {
+    .about-info p,
+    .about-info h3 {
+        padding-left: 100px;
+    }    
+}
+/*====================================================
+END Screen size 767px after Styles (navbar responsive)
+======================================================*/
+
+
+/*=================================================
+                    Home Styles
+
+.slider-overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    top: 39%;
+    width: 100%;
+}
+
+==================================================*/
+.slider {
+    background-image: url(..//img/backgroundImage.png);
+    height: 755px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 80px;    
+}
+
+.slider-content h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 80px;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color: #DAA159;
+}
+
+
+/*=================================================
+                    About Styles
+==================================================*/
+#about {
+    background-color: rgb(249, 249, 249);
+    padding-top: -28px;
+    padding-bottom: 50px;
+}
+
+.about-title h2 {
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.about-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 48%;
+    width: 60px;
+    height: 2px;
+    background-color: #129CF3;
+    padding-left: -30px;
+}
+
+.about-info h3 {
+    color: #DAA159;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.about-info p {
+    font-family: 'Droid Sans Mono';
+    color: #888888;
+    font-size: 16px;
+    padding-top: 12px;
+    letter-spacing: 1px;
+    
+}
+
+.about-info {
+    padding-top: 80px;
+}
+
+
+/*=================================================
+                    Background Styles
+==================================================*/
+
+.background-title h2 {
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.background-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: #129CF3;
+    margin-left: -30px;
+}
+
+.background-info {
+    margin-top: 80px;
+}
+
+.signature {
+    font-family: 'Sacramento', cursive !important;
+    color: #000 !important;
+    font-style: normal !important;
+    font-size: 32px !important;
+}
+
+.background-info p {
+    font-family: 'Droid Sans Mono';
+    color: #888888;
+    font-size: 16px;
+    padding-top: 12px;
+    letter-spacing: 1px;
+    line-height: 26px;    
+}
+
+
+/*=================================================
+                    Work Styles
+==================================================*/
+#work {
+    padding-bottom: 50px;
+}
+.work-title h2 {
+    font-weight: 400;
+    padding-top: 80px;
+}
+.work-title h2:after {
+    content: "";
+    position: absolute;
+    background-color: #129CF3;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -30px;
+}
+
+.no-gutters img {
+    width: 350px;
+    height: 227px;
+
+}
+
+.img-project {
+    padding-top: 80px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-gutters .img-wrapper {
+    overflow:hidden;
+}
+
+.no-gutters .img-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.no-gutters .img-wrapper img:hover {
+    transform: scale(1.5);
+}
+/*=================================================
+                    Skills Styles
+==================================================*/
+#skills {
+    background-color: rgb(249, 249, 249);
+    padding-bottom: 50px;
+}
+
+.skills-title h2 {
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.skills-title h2:after {
+    content: "";
+    position: absolute;
+    background-color: #129CF3;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -30px;
+}
+
+.skills {
+    margin-top: 80px;
+}
+
+.skill-info h4 {
+    color: #DDA159;
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.skill-info p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888888;
+}
+
+.skill-info .progress {
+    margin-bottom: 25px;
+    background: #ddd;
+    height: 22px;
+    margin-top: -12px;
+}
+
+.skill-info .progress-bar {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/*=================================================
+                    Say Hello Styles 9028310497
+==================================================*/
+#sayhello {
+    padding-bottom: 50px;    
+}
+
+.say-title h2 {
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.say-title h2:after {
+    content: "";
+    position: absolute;
+    background-color: #129CF3;
+    width: 60px;
+    height: 2px;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -30px;
+}
+
+.say-info {
+    margin-top: 80px;
+}
+
+.say-info .say-name {
+    color: #888888;
+    font-size: 20px;
+}
+
+.say-info .india {
+    color: #888888;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.say-contact .mobile-no {
+    color: #888888;
+    font-size: 17px;
+}
+
+.say-contact .email a {
+    color: #129CF3;
+}
+
+.say-contact a:hover {
+    text-decoration: none;
+    color: #333;
+}
+/*=================================================
+                    footer Styles
+==================================================*/
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #232323;
+    color: #fff;
+}
+
+.footer-name h3{
+    margin-top: 80px;
+    font-family: 'Monoton', cursive;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.footer-name a {
+    color: #fff;
+}
+.footer-name a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-info {
+    color: #888888;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Droid Sans Mono';
+    letter-spacing: 1px;
+}
+
+.github {
+    color: red;
+    font-size: 20px;
+}
+
+.github:hover {
+    text-decoration: none;
+}
+
+.social-icon a {
+    padding-left: 20px;
+    font-size: 20px;
+    color: #888888;
+}
+
+.social-icon a:hover {
+    color: #DDA159;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
