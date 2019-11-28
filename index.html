@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">   
     
     <!------ CSS Bootstrap file ------>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     
     <!------ Google Fonts file ------> 
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -19,29 +19,29 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton|Sacramento&display=swap" rel="stylesheet">
     
     
-    
-     
      <!-- Font Awesome cdn files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
 </head>
 <body>
-    <!------ Navigation  ------>
-    
-    <section id="navbar">
-        <nav class="navbar navbar-default fixed-top navbar-expand-md">
-           <div class="container">
+    <!------------------------ Navbar ------------------------>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md">
+        <div class="container">
                
-               <div class="navbar-brand">
-                   <h2 class="logo-name"><a href="#">MAULI  &nbsp;  &nbsp;  &nbsp; BHARATE</a></h2>
-               </div>
+            <div class="navbar-header">
+                <h2 class="logo-name"><a href="#">MAULI  &nbsp;  &nbsp;  &nbsp; BHARATE</a></h2>
+            
                 
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-item">
-                    <span class="navbar-toggler-icon"></span>
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-item">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                
-                <div class="collapse navbar-collapse" id="nav-item">
-                   <ul class="navbar-nav ml-auto">
+            
+            </div>
+            
+            <div class="collapse navbar-collapse" id="nav-item">
+                   <ul class="nav navbar-nav navbar-right">
                        <li class="nav-item">
                            <a class="nav-link" href="index.html">HOME</a>
                        </li>
@@ -64,82 +64,73 @@
                            <a class="nav-link resume" href="Mauli_Reusme_2611.pdf" target="_blank" type="application/pdf">MY RESUME</a>
                        </li>
                    </ul>
-               </div>
-           </div>
-        </nav>
-    </section>
-    
-    <!------ END Navigation  ------>
-   
-   
-   <!------ Home Section ------>
-   <section class="slider text-center" id='slider'>
-        <div class="slider-overlay">
-            <div class="slider-content">
-             
-                   <h1> Web Developer </h1>
+               </div>    
                 
-            </div> <!------ END .slider-content ------> 
-        </div> <!------ END .slider-overlay ------>
-    </section> <!------ END .section slider ------>
-    <!------ END Home Section ------>    
+        </div>
+    </nav>
+    <!------------------------ END Navbar ------------------------> 
     
     
-    <!------ About Section ------>
-    <section id="about">
+    <!------------------------  Home ------------------------>     
+    <section class="slider text-center" id="home">
+       <div class="slider-overlay">
+           <div class="slider-content">
+               <h1> Web Developer </h1>
+           </div>
+       </div>
+    </section>
+    <!------------------------ END Home ------------------------>
+    
+    
+    <!------------------------  About ------------------------>
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="about-title text-center">
                         <h2>About</h2>
                     </div>
                 </div>
             </div>
- 
             
-             <div class="row about-info">
-                <div class="col-md-6">
-                    <div class="img-wrapper img">
-                        <img class="img-responsive" src="img/about.png">
-                    </div>                    
-                </div>
-                
-                <div class="col-md-6">                     
-                        <h3>How can I help you?</h3>
-                        <p>
-                            I am a creative Front-End Developer. 
-                        </p> 
-                        <p>
-                            I develop Front-End Website using HTML5/CSS3, PHP + <br> MySQL, and Bootstrap (plus many others).
-                        </p>
-                        <p>
-                            Experienced in mobile and web design and UX optimisation.<br>
-                        </p>
-                        
-                        
-                        <p>
-                            Design samples you can find below.
-                        </p>
-                </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 about-info">
+                <div class="img-wrapper img">
+                    <img class="img-responsive" src="img/about.png">
+                </div> 
             </div>
+            
+             <div class="col-md-6 col-sm-6 col-xs-12 about-info">                    
+               <h3>How can I help you?</h3>
+                    <p>
+                        I am a creative Front-End Developer. 
+                    </p> 
+                    <p>
+                        I develop Front-End Website using HTML5/CSS3, PHP + <br> MySQL, and Bootstrap (plus many others).
+                    </p>
+                    <p>
+                        Experienced in mobile and web design and UX optimisation.<br>
+                    </p>
+                    <p>
+                         Design samples you can find below.
+                    </p>         
+             </div>
         </div>
-    </section>    
-    <!------ END About Section ------>
+    </section>
+    <!------------------------ END About ------------------------>
     
     
-    <!------ Background Section ------>
-    <section id="background">
+    <!------------------------  Background ------------------------>
+    <section class="background" id="background">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                     <div class="background-title text-center">
-                         <h2>Background</h2>    
-                     </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="background-title text-center">
+                        <h2>Background</h2>    
+                    </div>
                 </div>
-            </div> 
+            </div>
             
-            <div class="row">
-                <div class="col-md-6">
+             <div class="col-md-6">
                    <div class="background-info">
                         <p>
                             Completed Bachelor’s Degree in Computer Engineering from <br> University of Pune with 7.66 CGPA.
@@ -161,94 +152,96 @@
                         <p class="signature"> Mauli Bharate </p>
                     </div>
                 </div>
-            </div>  
-        </div>
+        </div> 
     </section>
-    <!------ END Background Section ------>
+    <!------------------------  END Background ------------------------>
     
     
-    <!------ Work Section ------>
-    <section id="work">
-        <div class="container-fluid">
+    <!------------------------  Work ------------------------>
+    <section class="work" id="work">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="work-title text-center">
                         <h2>Work</h2>
                     </div>
                 </div>
             </div>
-            
-            <div class="img-project">
-                <div class="row no-gutters text-center">
-                    <div class="col-md-4">
-                        <div class="img-wrapper">
-                            <a href="https://maulibharate.github.io/doggax/" title="" target="_blank">
-                                <img src="img/project%20(1).png" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="img-wrapper">
-                            <a href="https://maulibharate.github.io/eASYTUTORIALS/" title="" target="_blank">
-                                <img src="img/project%20(2).png" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="img-wrapper">
-                            <a href="https://maulibharate.github.io/zelle/" title="" target="_blank">
-                                <img src="img/project%20(3).png" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------ END Work Section ------>
-    
-        
-    <!------ Skills Section ------>
-    <section id="skills">
-        <div class=container>
+        </div>    
+           
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <div class="img-project no-gutters text-center">
+                            <div class="col-md-4">
+                                <div class="img-wrapper">
+                                    <a href="https://maulibharate.github.io/doggax/" title="" target="_blank">
+                                        <img src="img/project%20(1).png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="img-wrapper">
+                                    <a href="https://maulibharate.github.io/eASYTUTORIALS/" title="" target="_blank">
+                                        <img src="img/project%20(2).png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="img-wrapper">
+                                    <a href="https://maulibharate.github.io/zelle/" title="" target="_blank">
+                                        <img src="img/project%20(3).png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>   
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <!------------------------  END Work ------------------------>
+    
+    
+    <!------------------------ Skills ------------------------>
+    <section id="skills">
+        <div class=container>
+           <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="skills-title text-center">
                         <h2>Skills</h2>
                     </div>
                 </div>
             </div>
             
-            <div class="row skills">
-                <div class="col-md-6">
-                    <div class="skill-info">
-                        <h4>Front-End</h4>
+            <div class="col-md-6 col-sm-12 col-xs-12 skills">
+                <div class="skill-info">
+                    <h4>Front-End</h4>
                         
-                        <p> Website Designing </p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 70%;">75%</div>
-                        </div>
-                        
-                        <p>HTML5</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 68%">68%</div>
-                        </div>
-                        
-                        <p>CSS3</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 67%">67%</div>
-                        </div>
-                        
-                        <p>Bootstrap</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 65%">65%</div>
-                        </div>
+                    <p> Website Designing </p>
+                    <div class="progress">
+                       <div class="progress-bar" style="width: 70%;">75%</div>
                     </div>
-                </div>
+                        
+                    <p>HTML5</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 68%">68%</div>
+                    </div>
+                        
+                    <p>CSS3</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 67%">67%</div>
+                     </div>
+                 
+                    <p>Bootstrap</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 65%">65%</div>
+                    </div>
+                 </div>
+               </div>
                 
-                 <div class="col-md-6">
+                 <div class="col-md-6 col-sm-12 col-xs-12 skills">
                     <div class="skill-info">
                         <h4>Back-End</h4>
                         
@@ -264,17 +257,16 @@
                         
                     </div>
                 </div>
-            </div>
         </div>
     </section>
-    <!------ END Skills Section ------>
+    <!------------------------  END Skills ------------------------>
     
     
-    <!------ Say Hello Section ------>
+    <!------------------------ Skills ------------------------>
     <section id="sayhello">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="say-title text-center">
                         <h2>Say Hello!</h2>
                     </div>
@@ -294,28 +286,28 @@
             </div>
             ----------------------------->
             <div class="row say-info">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                     <h6 class="say-name"> Mauli Bharate </h6>
                     <h6 class="india"> (India) </h6>
                 </div>
             </div>
             <br><br>
             <div class="row say-contact">
-                <div class="col-md-12 text-center">
-                    <h6 class="mobile-no"> <a href="tel:+917066163764"> +91 7066163764 </a> </h6>
-                    <h6 class="email"> <a href="mailto:maulibharate96@gmail.com" target="_blank">maulibharate96@gmail.com </a> </h6>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h4 class="mobile-no"> <a href="tel:+917066163764"> +91 7066163764 </a> </h4>
+                    <h4 class="email"> <a href="mailto:maulibharate96@gmail.com" target="_blank">maulibharate96@gmail.com </a> </h4>
                 </div>
             </div>
         </div>
     </section>
-    <!------ END Say Hello Section ------>
+    <!------------------------ END Skills ------------------------>
     
     
-    <!------ Fotter Section ------>
+    <!------------------------ Fotter ------------------------>
     <footer>
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12  col-sm-12 col-xs-12">
                     <div class="footer-name">
                         <h3> <a href="index.html"> MAULI &nbsp; &nbsp; &nbsp;  BHARATE </a> </h3>
                     </div>
@@ -331,7 +323,7 @@
             </div>
             
             <div class="row text-center">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="social-icon">
                         <a href="#" class="fa fa-linkedin" data-toggle="tooptip" data-placement="bottom" title="Linkedin" target="_blank"></a>
                               
@@ -341,11 +333,7 @@
             </div>
         </div>
     </footer>
-    <!------ Fotter Section ------>
-    
-  
-    
-    
+    <!------------------------ END Fotter ------------------------>
     
     
     <!------ JS files   ------>
@@ -360,7 +348,5 @@
     
 </body>
 </html>
-
-
 
 
