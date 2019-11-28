@@ -3,15 +3,9 @@
     padding: 0;
 }
 
-.body {
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
-
 /*=================================================
                     Navigation Styles
 ==================================================*/
-
 .navbar {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -20,11 +14,9 @@
 .navbar-nav a {
     display: block;
     position: relative;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-right: 15px;
-    
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;    
 }
 
 .logo-name a:hover {
@@ -38,9 +30,11 @@
     font-size: 30px;
 }
 
+.collapse ul {
+    padding: 10px;
+}
 .nav-link {
-    color: #000;
-    
+    color: #000 !important;
     text-align: center;
 }
 
@@ -48,10 +42,28 @@
     color: #000;
 }
 
+.navbar-toggle {
+    border: 1px solid #333 !important;
+}
+
+.navbar-toggle:hover {
+    background-color: #129CF3 !important;
+    border: 1px solid #129CF3 !important;
+}
+
+.navbar-bar {
+    color: #333 !important;
+    background-color: #333 !important;
+}
+
+.navbar-toggle:hover .icon-bar {
+    background-color: #fff !important;   
+}
+
 .nav-link:hover::after {
     content: "";
     position: absolute;
-    bottom: -18px;
+    bottom: -10px;
     left: 29%;
     width: 40px;
     height: 2px;
@@ -64,7 +76,7 @@
 .back:hover::after {
     content: "";
     position: absolute;
-    bottom: -18px;
+    bottom: -10px;
     left: 20%;
     width: 80px !important;
     height: 2px;
@@ -76,23 +88,14 @@
 .navbar-nav .resume {
     border: 1px solid #333;
     border-radius: 25px;
-    padding: 10px;
+    padding: 14px;
     text-align: center;
 }
 
 .navbar-nav .resume:hover {
     border-color: #129CF3;
-    background-color: #129CF3;
-    color: #fff;
-}
-
-.navbar-toggler {
-    border: 1px solid #DDA159 !important;
-    background-color: #DDA159 !important;
-}
-
-.navbar-toggler-icon {
-    background-color: #DDA159 !important;
+    background-color: #129CF3 !important;
+    color: #fff !important;
 }
 
 /*=================================================
@@ -132,13 +135,6 @@ Screen size 767px after Styles (navbar responsive)
     
  
 }
-
-@media only screen and (max-width: 991px) {
-    .about-info p,
-    .about-info h3 {
-        padding-left: 100px;
-    }    
-}
 /*====================================================
 END Screen size 767px after Styles (navbar responsive)
 ======================================================*/
@@ -146,6 +142,15 @@ END Screen size 767px after Styles (navbar responsive)
 
 /*=================================================
                     Home Styles
+==================================================*/
+.slider {
+    background-image: url(../img/backgroundImage.png);
+    width: 100%;
+    height: 750px;
+    margin-top: 85px;
+    background-size: cover;
+    background-position: center;
+}
 
 .slider-overlay {
     width: 100%;
@@ -153,25 +158,9 @@ END Screen size 767px after Styles (navbar responsive)
     position: relative;
 }
 
-.slider-content {
-    position: absolute;
-    top: 39%;
-    width: 100%;
-}
-
-==================================================*/
-.slider {
-    background-image: url(..//img/backgroundImage.png);
-    height: 755px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin-top: 80px;    
-}
-
 .slider-content h1{
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 80px;
@@ -180,30 +169,32 @@ END Screen size 767px after Styles (navbar responsive)
     color: #DAA159;
 }
 
-
-/*=================================================
-                    About Styles
-==================================================*/
-#about {
-    background-color: rgb(249, 249, 249);
-    padding-top: -28px;
-    padding-bottom: 50px;
-}
-
-.about-title h2 {
-    font-weight: 400;
-    padding-top: 80px;
-}
-
 .about-title h2:after {
     content: "";
     position: absolute;
     bottom: -10px;
-    left: 48%;
-    width: 60px;
+    left: 47%;
+    width: 70px;
     height: 2px;
     background-color: #129CF3;
-    padding-left: -30px;
+}
+
+/*=================================================
+                    About Styles
+==================================================*/
+.about {
+    background-color: rgb(249, 249, 249);
+    margin-top: -140px;
+    padding-bottom: 80px;
+}
+
+.about-title h2 {
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+.about-info {
+    padding-top: 80px;
 }
 
 .about-info h3 {
@@ -217,37 +208,30 @@ END Screen size 767px after Styles (navbar responsive)
     color: #888888;
     font-size: 16px;
     padding-top: 12px;
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px;   
 }
-
-.about-info {
-    padding-top: 80px;
-}
-
 
 /*=================================================
                     Background Styles
 ==================================================*/
-
 .background-title h2 {
     font-weight: 400;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .background-title h2:after {
     content: "";
     position: absolute;
     bottom: -10px;
-    left: 50%;
-    width: 60px;
+    left: 48%;
+    width: 110px;
     height: 2px;
     background-color: #129CF3;
     margin-left: -30px;
 }
 
 .background-info {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .signature {
@@ -263,20 +247,21 @@ END Screen size 767px after Styles (navbar responsive)
     font-size: 16px;
     padding-top: 12px;
     letter-spacing: 1px;
-    line-height: 26px;    
+    line-height: 26px; 
 }
 
+.background {
+    padding-bottom: 80px;
+}
 
 /*=================================================
                     Work Styles
 ==================================================*/
-#work {
-    padding-bottom: 50px;
-}
 .work-title h2 {
     font-weight: 400;
     padding-top: 80px;
 }
+
 .work-title h2:after {
     content: "";
     position: absolute;
@@ -288,19 +273,8 @@ END Screen size 767px after Styles (navbar responsive)
     margin-left: -30px;
 }
 
-.no-gutters img {
-    width: 350px;
-    height: 227px;
-
-}
-
 .img-project {
     padding-top: 80px;
-}
-
-.row.no-gutters [class*=col-] {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .no-gutters .img-wrapper {
@@ -314,6 +288,12 @@ END Screen size 767px after Styles (navbar responsive)
 .no-gutters .img-wrapper img:hover {
     transform: scale(1.5);
 }
+
+.work {
+    padding-bottom: 80px;
+}
+
+
 /*=================================================
                     Skills Styles
 ==================================================*/
@@ -339,7 +319,7 @@ END Screen size 767px after Styles (navbar responsive)
 }
 
 .skills {
-    margin-top: 80px;
+    padding-top: 80px;    
 }
 
 .skill-info h4 {
@@ -365,14 +345,12 @@ END Screen size 767px after Styles (navbar responsive)
 .skill-info .progress-bar {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-}
-/*=================================================
-                    Say Hello Styles 9028310497
-==================================================*/
-#sayhello {
-    padding-bottom: 50px;    
+    background-color: #129CF3;
 }
 
+/*=================================================
+                    Say Hello Styles
+==================================================*/
 .say-title h2 {
     font-weight: 400;
     padding-top: 80px;
@@ -391,13 +369,10 @@ END Screen size 767px after Styles (navbar responsive)
     margin-left: -30px;
 }
 
-.say-info {
-    margin-top: 80px;
-}
-
 .say-info .say-name {
     color: #888888;
     font-size: 20px;
+    padding-top: 80px;
 }
 
 .say-info .india {
@@ -406,9 +381,11 @@ END Screen size 767px after Styles (navbar responsive)
     font-weight: 400;
 }
 
-.say-contact .mobile-no {
-    color: #888888;
+.say-contact .mobile-no a {
     font-size: 17px;
+    font-weight: 600;
+    color: #129CF3;
+    
 }
 
 .say-contact .email a {
@@ -418,6 +395,10 @@ END Screen size 767px after Styles (navbar responsive)
 .say-contact a:hover {
     text-decoration: none;
     color: #333;
+}
+
+.say-contact {
+    padding-bottom: 50px;
 }
 /*=================================================
                     footer Styles
@@ -459,6 +440,7 @@ footer {
 
 .github:hover {
     text-decoration: none;
+    color: #129CF3;
 }
 
 .social-icon a {
@@ -471,19 +453,3 @@ footer {
     color: #DDA159;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
